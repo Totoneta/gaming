@@ -1,0 +1,239 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Platypi", serif;
+}
+
+/* Body */
+body {
+    background-color: #000000;
+}
+
+/* NavBar */
+.menu-horizontal {
+    background: linear-gradient(#000 50%, #fff);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    width: 100%;
+}
+
+/* Menú Izquierda */
+.item-bar-menu {
+    color: #fff;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+/* Menú-menú */
+.item-bar-menu {
+    padding-top: 1rem;
+}
+
+.img-navbar-izquierda {
+    height: 1.8rem;
+    padding-left: 4rem;
+    cursor: pointer;
+}
+
+.item-menu {
+    list-style: none;
+}
+
+.item-menu>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.item-menu>a:hover {
+    color: #494949;
+}
+
+/* Items derecha Navbar*/
+.menu-derecha>a {
+    color: #fff;
+    text-align: center;
+    padding-top: .3rem;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-derecha>a>h2 {
+    margin-right: 1rem;
+}
+
+/* Imagen Logo Menú*/
+.imagen-logo {
+    height: 4rem;
+    padding-right: 1rem;
+}
+
+
+/* Menú vertical */
+.menu-vertical {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 13rem;
+    background: linear-gradient(transparent, #000 30%);
+    padding: 1rem;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 0;
+    top: 3rem;
+    left: 0;
+    pointer-events: none;
+}
+
+/* FIN NavBar */
+
+/* Contenedor */
+.contenedor{
+    border: 3px solid #fff;
+    margin-top: 2rem;
+    display: flex;
+    padding: 1rem 0;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 13rem;
+    margin-right: 13rem;
+    margin-bottom: .5rem;
+}
+
+/* Título */
+.titulo {
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 2rem;
+    font-size: 2rem;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+/* Formulario */
+.iniciar {
+    display: flex;
+    justify-content: center;
+}
+
+.form-iniciar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 5px;
+    align-items: center;
+}
+
+.form-iniciar>input {
+    margin: 10px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+
+.btn-form {
+    font-size: 1rem;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+
+}
+
+/* Redes */
+.redes {
+    display: flex;
+    gap: .1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.redes>span{
+    color: #fff;
+}
+
+.redes>a {
+    color: #ff7e7e;
+    text-decoration: none;
+}
+
+.redes>a:hover {
+    color: #ff4141;
+}
+
+/* Footer */
+footer {
+    border: 3px solid #fff;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.footer-derecha {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>div>img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    border: 3px solid #fff;
+    padding: 1rem;
+    align-items: center;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.form-input {
+    border: none;
+    outline: none;
+    margin: .8rem;
+    width: 20rem;
+    padding: .5rem;
+}
+
+.form-submit {
+    width: 10rem;
+}
+
+.formulario>h4 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* FIN Body */
+
+/* Js MenuNabvar */
+.showhide {
+    opacity: 1;
+    pointer-events: all;
+}
