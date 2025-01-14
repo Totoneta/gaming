@@ -54,7 +54,6 @@ body {
 /* Imagen Logo Menú*/
 .imagen-logo {
     height: 4rem;
-    padding-right: 1rem;
 }
 
 /* Menú Izquierda */
@@ -62,6 +61,7 @@ body {
     color: #000;
     list-style: none;
     font-size: 1.5rem;
+    padding-right: 1rem;
 }
 
 /* Menú-menú */
@@ -109,7 +109,7 @@ body {
 /* Body */
 
 /* Imagen Index */
-.img-index-container{
+.img-index-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -384,11 +384,13 @@ footer>div>img {
     /* NavBar */
     .menu-horizontal {
         height: 4rem;
+        justify-content: space-between;
+        padding: 0 1rem;
     }
 
     .img-navbar-izquierda {
         height: 2rem;
-        padding-left: 1rem;
+        padding: 0;
     }
 
     /* Imagen Logo Menú*/
@@ -400,6 +402,7 @@ footer>div>img {
 
     /* Menú vertical */
     .menu-vertical {
+        height: 100dvh;
         width: 11rem;
         padding: 4rem 1rem 1rem 1rem;
         top: 4rem;
@@ -416,8 +419,7 @@ footer>div>img {
         padding: 1rem .5rem;
     }
 
-    .index-text {
-    }
+    .index-text {}
 
     .index-text>h1 {
         font-size: 40px;
@@ -425,7 +427,7 @@ footer>div>img {
 
     .index-text>p {
         width: 100%;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     /* Tarjetas */
@@ -440,15 +442,22 @@ footer>div>img {
         height: auto;
     }
 
-    /* Tarjetas Vertical */
-    .tarjetas-dobles {
+    .tarjeta-uno>h3 {
+        font-size: 18px;
     }
+
+    .tarjeta-uno>p {
+        font-size: 12px;
+    }
+
+    /* Tarjetas Vertical */
+    .tarjetas-dobles {}
 
     /* Primer tarjeta */
     .tarjetas-uno,
     .tarjetas-dos {
         flex-direction: column;
-        width: 20rem;
+        width: 19rem;
     }
 
 
@@ -465,6 +474,22 @@ footer>div>img {
         height: 10rem;
         width: 16rem;
         margin: 0 auto;
+    }
+
+    .tarjetas-uno>div>h3 {
+        font-size: 18px;
+    }
+
+    .tarjetas-uno>div>p {
+        font-size: 12px;
+    }
+
+    .tarjetas-dos>div>h3 {
+        font-size: 18px;
+    }
+
+    .tarjetas-dos>div>p {
+        font-size: 12px;
     }
 
     /* Quiénes Somos */
@@ -496,8 +521,7 @@ footer>div>img {
 
 
     /* Footer */
-    footer {
-    }
+    footer {}
 
     .footer-derecha {
         padding: .5rem;
