@@ -109,12 +109,20 @@ body {
 /* Body */
 
 /* Imagen Index */
-.img-index {
+.img-index-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    overflow: hidden;
+}
+
+.img-index {
+    width: 200%;
     height: auto;
     position: static;
     z-index: -1;
-    height: 60dvh;
+    height: 90dvh;
 }
 
 /* Index card */
