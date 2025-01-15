@@ -72,8 +72,15 @@ body {
     list-style: none;
 }
 
-.item-menu>a {
+.normalnavbarcolor {
     color: #000;
+}
+
+.videojuegosnavbarcolor {
+    color: #db10c7;
+}
+
+.item-menu>a {
     text-decoration: none;
 }
 
@@ -84,6 +91,7 @@ body {
 /* Menú vertical */
 .menu-vertical {
     color: #000;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -100,6 +108,7 @@ body {
     transform: translateX(-300px);
     transition: all .6s;
 }
+
 
 
 
