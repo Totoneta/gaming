@@ -47,8 +47,7 @@ body {
     justify-content: center;
 }
 
-.menu-derecha>a {
-}
+.menu-derecha>a {}
 
 /* Imagen Logo Menú*/
 .imagen-logo {
@@ -76,17 +75,22 @@ body {
     color: #000;
 }
 
+.normalnavbarcolor:hover {
+    color: #494949;
+}
+
 .videojuegosnavbarcolor {
     color: #db10c7;
+}
+
+.videojuegosnavbarcolor:hover {
+    color: #da49cb;
 }
 
 .item-menu>a {
     text-decoration: none;
 }
 
-.item-menu>a:hover {
-    color: #494949;
-}
 
 /* Menú vertical */
 .menu-vertical {
@@ -386,9 +390,7 @@ footer>div>img {
     transform: translateX(0px);
 }
 
-/* MediaQuery */
-
-/* 345px */
+/* MediaQuery de 350px a 710px */
 @media (min-width: 350px) and (max-width: 710px) {
 
     /* NavBar */
@@ -511,19 +513,19 @@ footer>div>img {
     }
 
     .quienes-somos>img {
-        width: 250%;
-        height: 27rem;
+        width: 300%;
+        height: 29rem;
     }
 
     .quienes-somos>div {
-        gap: .5rem;
-        width: 20rem;
+        gap: 0;
+        width: 20.5rem;
         padding: 1rem;
-        top: .6rem;
+        top: 2rem;
     }
 
     .quienes-somos>div>h3 {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .listasobrenosotros {
@@ -572,52 +574,146 @@ footer>div>img {
 
 }
 
-/* 720px */
+/* MediaQuery de 711px a 1350px */
+@media (min-width: 711px) and (max-width: 1350px) {
 
-@media(min-width: 720px) and (max-width: 1350px) {
+    /* Index card */
+    .container-index-text {}
+
+    .index-text {}
+
+    .index-text>h1 {
+        font-size: 45px;
+    }
+
+    .index-text>p {
+        width: 90%;
+        font-size: 18px;
+    }
 
     /* Tarjetas */
     .tarjetas {
-        margin: 1rem;
-        flex-direction: row;
-        width: auto;
+        gap: .5rem;
+        padding: 3rem .5rem;
     }
 
-    /* Tarjeta Uno */
-    .tarjetas-uno>img {
-        width: 13rem;
+    /* Tarjeta Individual */
+    .tarjeta-uno {
+        justify-content: start;
+        flex-direction: column;
+        width: 12rem;
+        height: 100%;
+        gap: .5rem;
+        padding: .5rem;
     }
 
-    /* Tarjeta Dos */
-    .tarjetas-dos>img {
-        width: 13rem;
+    .tarjeta-uno:hover {
+        box-shadow: 1px 1px 8px 1px;
+        scale: 101%;
     }
 
-    /* Quienes Somos */
-    .quienes-somos {
-        flex-direction: row;
+    .tarjeta-uno>img {
+        height: 50%;
     }
+
+    .tarjeta-uno>h3 {
+        font-size: 22px;
+    }
+
+    .tarjeta-uno>p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+
+    /* Tarjetas Vertical */
+    .tarjetas-dobles {
+        gap: .5rem;
+    }
+
+    /* Primer tarjeta */
+    .tarjetas-uno,
+    .tarjetas-dos {
+        padding: .5rem;
+        flex-direction: column;
+        width: 19rem;
+    }
+
+    .tarjetas-uno:hover,
+    .tarjetas-dos:hover {
+        box-shadow: 1px 1px 8px 1px;
+        scale: 101%;
+    }
+
+    .tarjetas-uno>div,
+    .tarjetas-dos>div {
+        padding: 1rem;
+    }
+
+    .tarjetas-uno>img,
+    .tarjetas-dos>img {}
+
+    .tarjetas-uno>div>h3,
+    .tarjetas-dos>div>h3 {
+        font-size: 22px;
+    }
+
+    .tarjetas-uno>div>p,
+    .tarjetas-dos>div>p {}
+
+
+    /* Quiénes Somos */
+    .quienes-somos {}
 
     .quienes-somos>img {
-        height: 9rem;
-        width: 15rem;
+        width: 250%;
     }
 
-    /* Footer */
-    footer {
-        flex-direction: row;
+    .quienes-somos>div {
+        top: 6.5rem;
+        gap: .5rem;
+        width: 41rem;
+        padding: 2rem;
     }
 
-    .formulario {
-        width: 20rem;
+    .quienes-somos>div>h3 {
+        font-size: 40px;
     }
 
-    .form-input {
-        width: 15rem;
+    .listasobrenosotros {
+        font-size: 16px;
+        gap: 1.5rem;
     }
 
 }
 
+/* MediaQuery de 1351px a 1910px */
+@media (min-width: 1351px) and (max-width: 1910px) {
 
+    /* Quiénes Somos */
+    .quienes-somos {
+    }
+
+    .quienes-somos>img {
+        width: 100%;
+    }
+
+    .quienes-somos>div {
+        top: 5rem;
+        gap: 1rem;
+        width: 70rem;
+        padding: 3rem;
+    }
+
+    .quienes-somos>div>h3 {
+        font-size: 45px;
+    }
+
+    .listasobrenosotros {
+        font-size: 17px;
+        gap: 1.5rem;
+    }
+
+}
 
 /* FIN Mediaquery */
