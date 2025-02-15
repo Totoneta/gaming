@@ -113,9 +113,6 @@ body {
     transition: all .6s;
 }
 
-
-
-
 /* FIN NavBar */
 
 /* Body */
@@ -199,7 +196,7 @@ body {
 }
 
 .tarjeta-uno:hover {
-    box-shadow: 3px 3px 10px 1px;
+    box-shadow: 10px 10px 15px 1px;
     scale: 105%;
 }
 
@@ -241,7 +238,7 @@ body {
 
 .tarjetas-uno:hover,
 .tarjetas-dos:hover {
-    box-shadow: 3px 3px 10px 1px;
+    box-shadow: 10px 10px 15px 1px;
     scale: 105%;
 }
 
@@ -688,7 +685,7 @@ footer>div>img {
 }
 
 /* MediaQuery de 1351px a 1910px */
-@media (min-width: 1351px) and (max-width: 1910px) {
+@media (min-width: 1351px) and (max-width: 1930px) {
 
     /* Quiénes Somos */
     .quienes-somos {
@@ -699,7 +696,7 @@ footer>div>img {
     }
 
     .quienes-somos>div {
-        top: 5rem;
+        top: 10rem;
         gap: 1rem;
         width: 70rem;
         padding: 3rem;

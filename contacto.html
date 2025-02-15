@@ -11,45 +11,67 @@
 <body>
     <!-- Navigation Bar -->
     <header>
-        <nav>
+        <nav class="navcontainer">
             <ul class="menu-horizontal">
-                <img class="img-navbar-izquierda" src="/Images/tres-lineas.png" alt="Menú-Desplegable">
+                <img class="img-navbar-izquierda" src="/Images/menu.svg" alt="Menú-Desplegable">
                 <li class="item-bar-menu">
                     <ul class="menu-vertical">
-                        <li class="item-menu"><a href="/index.html">INICIO</a></li>
-                        <li class="item-menu"><a href="/videojuegos.html">VIDEOJUEGOS</a></li>
-                        <li class="item-menu"><a href="contacto.html">CONTACTANOS</a></li>
+                        <li class="item-menu"><a class="normalnavbarcolor" href="/index.html">Inicio</a></li>
+                        <li class="item-menu"><a class="videojuegosnavbarcolor" href="/videojuegos.html">Videojuegos</a>
+                        </li>
+                        <li class="item-menu"><a class="normalnavbarcolor" href="contacto.html">Contacto</a></li>
                     </ul>
                 </li>
                 <div class="menu-derecha">
                     <a href="index.html">
-                        <h2>Ingresar</h2><img src="Images/Logo.png" alt="Logo TOTONEXT" class="imagen-logo">
+                        <img src="Images/Logo.png" alt="Logo TOTONEXT" class="imagen-logo">
                     </a>
                 </div>
             </ul>
         </nav>
     </header>
-    <div class="contenedor">
-        <div class="titulo">
-            <h2>¡CONTACTANOS!</h2>
-        </div>
-        <div class="iniciar">
-            <form class="form-iniciar">
-                <input type="text" placeholder="Nombre y Apellido">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Mensaje">
-                <input type="submit" value="Enviar" class="btn-form">
-            </form>
-        </div>
-        <div class="redes">
-            <span>Visita Nuestra Redes:</span>
-            <a href="https://web.whatsapp.com/" target="_blank" class="registrarse">WhatsApp</a>
-            <a href="https://www.facebook.com/" target="_blank" class="registrarse">Facebook</a>
-            <a href="https://www.instagram.com/" target="_blank" class="registrarse">Instagram</a>
 
+    <div class="contenedor">
+        <div class="subcontenedor">
+            <div class="titulo">
+                <h2>¡CONTACTANOS!</h2>
+            </div>
+            <div class="iniciar">
+                <form class="form-iniciar">
+                    <input type="text" placeholder="Nombre y Apellido" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Mensaje" required>
+                    <button type="submit" class="btn-form">Enviar</button>
+                </form>
+            </div>
+            <div class="redes">
+                <div class="redestitulo">
+                    <img src="./Images/rightarrowdown.svg" alt="">
+                    <span>Visita Nuestra Redes</span>
+                    <img src="./Images/leftarrowdown.svg" alt="">
+                </div>
+                <a href="https://web.whatsapp.com/" target="_blank" class="registrarse">WhatsApp</a>
+                <a href="https://www.facebook.com/" target="_blank" class="registrarse">Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank" class="registrarse">Instagram</a>
+
+            </div>
         </div>
     </div>
 
+    <!-- Footer -->
+    <footer>
+        <form class="formulario" action="">
+            <h4>¡Contactanos!</h4>
+            <input class="form-input" placeholder="Nombre y Apellido" type="text" required>
+            <input class="form-input" placeholder="Email" type="email" required>
+            <input class="form-input" placeholder="Descripción" type="text" required>
+            <input class="form-submit" value="Enviar" type="submit">
+        </form>
+        <div class="footer-derecha">
+            <img src="/Images/Logo.png" alt="Logo">
+            <span>© Todos los derechos reservados. TGGAMES S.A.</span>
+        </div>
+    </footer>
 
     <script src="/JS/iniciar_sesion.js"></script>
 </body>

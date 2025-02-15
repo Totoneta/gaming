@@ -10,7 +10,10 @@
 }
 
 body {
-    background-color: #fff;
+    background-image: url('./../Images/fondovideojuegos.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* NavBar */
